@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">iMarkaz</string>
+    <string name="share">Share</string>
+    <string name="robo_advisor">Robo Advisor</string>
+    <string name="next">next</string>
+    <string name="ok">ok</string>
+    <string name="centered_around_you">Centered \n around you</string>
+    <string name="our_success_is">Our Success is</string>
+    <string name="lets_start">Lets start</string>
+    <string name="informed_advice">Informed advice,\n lastin relations</string>
+    <string name="lasting_relations">lasting relations</string>
+    <string name="our_knowledge_powers_your_assets">Our Knowledge powers your assets</string>
+    <string name="award_winning">Award winning investment services since 1974</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="title_activity_home">ActivityHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="last_lgged_in_on">last lgged in on</string>
+    <string name="total_portfolio_value">Total Portfolio Value</string>
+    <string name="performance">Performance</string>
+    <string name="asset_allocation_pie_chart">Asset Allocation PIE Chart</string>
+    <string name="asset_class">Asset Class</string>
+    <string name="geographical">Geographical</string>
+    <string name="sector">Sector</string>
+    <string name="currency">Currency</string>
+    <string name="hello">Hello,</string>
+    <string name="portfolio_overview">Portfolio Overview</string>
+    <string name="accounts_summary">Accounts Summary</string>
+    <string name="activities_transactions">Activities / transactions</string>
+    <string name="reports">Reports</string>
+    <string name="notificarions">Notifications</string>
+    <string name="contact_rm">Contact RM</string>
+    <string name="settings">Settings</string>
+    <string name="chat_box">Chat box</string>
+    <string name="logout">Logout</string>
+    <string name="cash">Cash</string>
+
+    <string name="holdin_value">Holding value</string>
+    <string name="total_cash">Total Cash Position</string>
+    <string name="nbr_units_value"># of units -NAV Value</string>
+    <string name="positions">Positions</string>
+    <string name="gain_loss">Gain/Loss</string>
+    <string name="income">Income</string>
+    <string name="total_cost_total_value">Total Cost  \n Total Value</string>
+    <string name="equities">Equities</string>
+    <string name="avg_cost_last_price">Avg Cost \n  Last Price</string>
+    <string name="realized_pl_ytd">Realized PL YTD</string>
+    <string name="last_close_n_chg">Last Close \n  Chg</string>
+    <string name="current_chg">Current \n  % Chg</string>
+    <string name="portfolio_value">Portfolio Value</string>
+    <string name="total">Total</string>
+    <string name="qnt">Qnt:</string>
+    <string name="last_day">Last Day</string>
+    <string name="mtd">MTD</string>
+    <string name="date">Date</string>
+    <string name="product">Product</string>
+    <string name="type">Type</string>
+    <string name="security">Security</string>
+    <string name="city">City</string>
+    <string name="wtd">WTD</string>
+    <string name="ytd">YTD</string>
+    <string name="inception">Inception</string>
+    <string name="chart">Chart</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="percentage">Percentage</string>
+    <string name="benchmark">Benchmark</string>
+    <string name="topholding">Top 5 holding</string>
+    <string name="top_gainers">Top Gainers</string>
+    <string name="top_5_loosers">Top 5 Loosers</string>
+    <string name="holding_code_and_ticker">Holding Code &amp; ticker</string>
+    <string name="mv_kd">MV KD % %</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="markaz_email">almarkaz@info.com</string>
+    <string name="markaz_phone">00 965 468 374</string>
+    <string name="complaints">Complaints</string>
+    <string name="google_maps_key" translatable="false">AIzaSyAn--autuSz4xETI4vX6plt0ZWUE79VYIk</string>
+
+    <string name="contact_us">Contact Us</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="check_empty_fields">Please check empty field</string>
+    <string name="welcome_mr">Welcome Mr.</string>
+    <string name="portfolio_name">Portfolio Name</string>
+    <string name="portfolio_kwd">Portfolio KWD</string>
+    <string name="cash_aft">Cash AFT</string>
+    <string name="deposits">Deposits</string>
+    <string name="blocked">Blocked</string>
+    <string name="div_due">Div Due</string>
+    <string name="other_receivable">Other Receivables</string>
+    <string name="mngt_fees">Mngt Fees Due</string>
+    <string name="other_payable">Other Payables</string>
+    <string name="tcash_position">T cash position</string>
+    <string name="prt_w">% Prt.W \n %R</string>
+    <string name="bechw_perr">%Bench.W \n %R</string>
+
+    <string name="download_failed">Download failed you should allow permission to storage</string>
+    <string name="downloading">Downloading...</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="language">Language</string>
+
+    <string name="f_arabic" translatable="false">عربي</string>
+    <string name="f_english" translatable="false">English</string>
+    <string name="version">Version</string>
+    <string name="biometric_login">Biometric Login</string>
+    <string name="current_currency">Current Currency</string>
+
+    <string name="update_message">New version is available, please update</string>
+    <string name="update_title">Update Available</string>
+    <string name="update_button">Update</string>
+    <string name="update_cancel">Cancel</string>
+
+    <string name="notification_error_ssl_cert_invalid">Invalid certificate</string>
+
+
+</resources>

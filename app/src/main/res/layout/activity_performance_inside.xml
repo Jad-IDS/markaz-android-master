@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_shadow"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/table_odd"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        <com.ids.markaz.custom.CustomTextViewLite
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/portfolio_value"
+                android:textColor="@color/black"
+                android:textSize="@dimen/titles_font" />
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="-"
+                android:id="@+id/tvPortfolioValue"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/titles_font" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_shadow"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearTabs"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/tvTabTopHolding"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:background="@drawable/rounded_corner_secondary"
+                android:text="@string/topholding"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:id="@+id/tvTabTopGainers"
+                android:paddingRight="@dimen/mini_margin"
+                android:text="@string/top_gainers"
+                android:background="@drawable/rounded_border_secondary"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/secondary"/>
+
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/tvTabTopLooser"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:gravity="center"
+                android:background="@drawable/rounded_border_secondary"
+                android:text="@string/top_5_loosers"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/secondary"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@color/primary"
+            android:id="@+id/tab_income_header"
+            android:orientation="horizontal">
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="@string/holding_code_and_ticker"
+                android:textColor="@color/white"
+                android:textSize="@dimen/too_small_font" />
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/separator_secondary" />
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="@string/mv_kd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/too_small_font" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvPerformance"
+
+            />
+
+
+
+
+
+
+</LinearLayout>
+       <include layout="@layout/loading_trans"/>
+
+
+</RelativeLayout>

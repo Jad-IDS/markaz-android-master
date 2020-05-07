@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">65dp</dimen>
+
+    <dimen name="home_toolbar_height">55dp</dimen>
+    <dimen name="font">14sp</dimen>
+    <dimen name="menu_font">16sp</dimen>
+    <dimen name="font_footer">13sp</dimen>
+    <dimen name="small_font">12sp</dimen>
+    <dimen name="too_small_font">11sp</dimen>
+    <dimen name="big_margin">20dp</dimen>
+    <dimen name="second_margin">12dp</dimen>
+    <dimen name="third_margin">15dp</dimen>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="mini_margin">4dp</dimen>
+    <dimen name="normal_margin">9dp</dimen>
+    <dimen name="mini_radius">5dp</dimen>
+    <dimen name="big_radius">14dp</dimen>
+    <dimen name="big_font">16sp</dimen>
+    <dimen name="titles_font">26sp</dimen>
+    <dimen name="very_big_font">22sp</dimen>
+    <dimen name="button_width">220dp</dimen>
+    <dimen name="button_height">41dp</dimen>
+    <dimen name="toolbar_margin">40dp</dimen>
+    <dimen name="card_corner_radius">24dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="footer_home_height">70dp</dimen>
+    <dimen name="toolbar_icon">30dp</dimen>
+
+    <dimen name="normal_amount_width">30dp</dimen>
+    <dimen name="normal_amount_height">60dp</dimen>
+    <dimen name="selected_amount_width">40dp</dimen>
+    <dimen name="selected_amount_height">80dp</dimen>
+    <dimen name="edit_text_height">45dp</dimen>
+    <dimen name="block_height">120dp</dimen>
+    <dimen name="tab_width">120dp</dimen>
+    <dimen name="cell_height">40dp</dimen>
+
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="logo_start_width">300dp</dimen>
+    <dimen name="block_width">220dp</dimen>
+
+</resources>

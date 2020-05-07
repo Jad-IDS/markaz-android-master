@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        <LinearLayout
+                android:layout_width="@dimen/tab_width"
+                android:layout_height="@dimen/button_height"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tabCash"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@drawable/rounded_corner_secondary">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/second_margin"
+                    android:paddingRight="@dimen/second_margin"
+                    android:id="@+id/tvTabCash"
+                    android:text="@string/cash"
+                    android:textSize="@dimen/small_font"
+                    android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="@dimen/tab_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tabHolding"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@drawable/rounded_border_secondary">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/second_margin"
+                    android:id="@+id/tvtabHolding"
+                    android:paddingRight="@dimen/second_margin"
+                    android:text="@string/geographical"
+                    android:textSize="@dimen/small_font"
+                    android:textColor="@color/secondary"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:background="@color/primary"
+                    android:orientation="horizontal">
+
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:paddingRight="@dimen/small_margin"
+                        android:text="@string/total_portfolio_value"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font" />
+
+                <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_trans" />
+
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:paddingRight="@dimen/small_margin"
+                        android:id="@+id/tvHeaderTitle"
+                        android:text="@string/holdin_value"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+
+                    />
+
+            <LinearLayout
+                    android:id="@+id/linearholding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/big_margin"
+                        android:background="@color/gray_header"
+                        android:orientation="horizontal">
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/small_margin"
+                            android:paddingRight="@dimen/small_margin"
+                            android:text="@string/total_portfolio_value"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font" />
+
+                    <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_light" />
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/small_margin"
+                            android:paddingRight="@dimen/small_margin"
+                            android:text="@string/nbr_units_value"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvHolding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

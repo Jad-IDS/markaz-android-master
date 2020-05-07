@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="40dp"
+
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+        <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:id="@+id/circle_color"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:background="@drawable/circle_primary"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"/>
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Banks"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_font" />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font"
+                android:text="45%"
+                android:id="@+id/tvPercentage"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

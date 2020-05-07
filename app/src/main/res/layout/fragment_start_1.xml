@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+
+            android:orientation="vertical">
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_knowledge_powers_your_assets"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:paddingTop="160dp"
+                android:textColor="@color/primary"
+                android:textSize="28sp"
+                />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/very_big_font"
+                android:text="@string/award_winning"
+                android:layout_marginRight="@dimen/second_margin"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/awards"
+            android:layout_gravity="center"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:layout_height="70dp"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg1"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="90dp"
+                android:id="@+id/linearSkip1"
+                android:onClick="skip"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_next"/>
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_shadow"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/table_odd"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+          >
+
+        <com.ids.markaz.custom.CustomTextViewLite
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/portfolio_value"
+                android:textColor="@color/black"
+                android:textSize="@dimen/titles_font" />
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tvPortfolioValue"
+                android:gravity="center"
+                android:text="KWD 14,300"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/titles_font" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_shadow"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearTabs"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/tvTabPositions"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:background="@drawable/rounded_corner_secondary"
+                android:text="@string/positions"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:id="@+id/tvTabGainLoss"
+                android:paddingRight="@dimen/mini_margin"
+                android:text="@string/gain_loss"
+                android:background="@drawable/rounded_border_secondary"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/secondary"/>
+
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/tvTabIncome"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:gravity="center"
+                android:background="@drawable/rounded_border_secondary"
+                android:text="@string/income"
+                android:textSize="@dimen/too_small_font"
+                android:textColor="@color/secondary"/>
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/tvTabPerformance"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:text="@string/performance"
+                android:textSize="@dimen/too_small_font"
+                android:background="@drawable/rounded_border_secondary"
+                android:textColor="@color/secondary"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@color/primary"
+            android:id="@+id/tab_gain_header"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/equities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/avg_cost_last_price"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_trans" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                 android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/total_cost_total_value"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_trans" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@color/primary"
+            android:id="@+id/tab_performance_header"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/equities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/prt_w"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_trans" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/bechw_perr"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_trans" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="% Diff"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@color/primary"
+            android:id="@+id/tab_income_header"
+            android:orientation="horizontal">
+
+
+
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/equities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+
+
+
+
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_trans" />
+
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="@string/realized_pl_ytd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_trans" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:text="Distributions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/too_small_font" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@color/primary"
+            android:id="@+id/tab_positions"
+            android:orientation="horizontal">
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="@string/equities"
+                android:textColor="@color/white"
+                android:textSize="@dimen/too_small_font" />
+
+
+
+
+
+
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="@string/last_close_n_chg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/too_small_font" />
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_trans" />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="@string/current_chg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/too_small_font" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvPortfolioData"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_header"
+                    android:orientation="horizontal"
+                    >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/cell_height"
+                        android:layout_weight="1.5">
+
+                    <com.ids.markaz.custom.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/total"
+                            android:textSize="@dimen/small_font"
+                            android:layout_margin="@dimen/normal_margin"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_shadow"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/cell_height"
+                            android:orientation="horizontal"
+                            >
+
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/cell_height"
+                                android:layout_weight="1"
+                                android:padding="@dimen/mini_margin"
+                                android:textColor="@color/white"
+                                android:text="3420000"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                        <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_shadow"/>
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="@dimen/cell_height"
+                                android:textColor="@color/white"
+                                android:text="100%"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_shadow"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/cell_height"
+                            android:orientation="horizontal"
+                            >
+
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/cell_height"
+                                android:layout_weight="1"
+                                android:padding="@dimen/mini_margin"
+                                android:textColor="@color/white"
+                                android:text="3420000"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                        <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_shadow"/>
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_height="@dimen/cell_height"
+                                android:textColor="@color/white"
+                                android:text="100%"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_shadow"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/cell_height"
+                            android:orientation="horizontal"
+
+                            >
+
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/cell_height"
+                                android:layout_weight="1"
+                                android:padding="@dimen/mini_margin"
+                                android:textColor="@color/red"
+                                android:text="3420000"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                        <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_shadow"/>
+                        <com.ids.markaz.custom.CustomTextViewBold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                android:layout_height="@dimen/cell_height"
+                                android:textColor="@color/red"
+                                android:text="100%"
+                                android:textSize="@dimen/small_font"
+                                android:layout_margin="@dimen/normal_margin"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

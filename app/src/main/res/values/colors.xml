@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47B7F5</color>
+<!--    #47b7f5&lt;!&ndash;&ndash;&gt;-->
+    <color name="colorPrimaryDark">#47B7F5</color>
+    <color name="colorAccent">#47B7F5</color>
+
+    <color name="primary">#00599B</color>
+    <color name="secondary">#47B7F5</color>
+    <color name="blue1">#3FADEC</color>
+
+    <color name="blue_lite">#d8e9f7</color>
+
+    <color name="white">#ffffff </color>
+
+    <color name="white_trans">#99ffffff </color>
+    <color name="black">#414141 </color>
+    <color name="gray_dark">#656565 </color>
+    <color name="gray_light">#eeeeee </color>
+    <color name="gray_shadow">#cecece</color>
+    <color name="grau_gradient">#ffffff</color>
+    <color name="gray_button">#9c9c9c</color>
+
+    <color name="green_lite">#00ee00</color>
+    <color name="transparent">#00000000 </color>
+    <color name="gray_text_dark">#424242</color>
+    <color name="gray_text_light">#969699</color>
+    <color name="blue">#4a90e2</color>
+    <color name="Kobi">#d98da9</color>
+    <color name="violet">#440e62</color>
+    <color name="violet2">#5578eb</color>
+
+    <color name="shadow_menu">#08518b</color>
+    <color name="red">#fe849a</color>
+
+    <color name="separator_secondary">#9947b7f5</color>
+    <color name="gray_header">#757679</color>
+
+    <color name="table_odd">#f8f9fb</color>
+
+    <color name="green">#7ccfa6</color>
+    <color name="green2">#1ecab6</color>
+
+    <color name="blacktrans">#44000000</color>
+
+    <color name="gray_medium">#efefef </color>
+
+
+</resources>

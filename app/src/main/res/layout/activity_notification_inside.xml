@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginTop="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:text="Your Account is Empty , some option you canot use"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font" />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginTop="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:text="16/01/2020"
+                android:textSize="@dimen/too_small_font"
+
+                />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginTop="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:text=" in an ever-growing world of global information, the tools for investing in the stock market are becoming available to anyone with an internet connection and a willing to learn new things. Fortrader offers you the opportunity to invest on a wide selection of stocks from around the world."
+                android:textColor="@color/black"
+                android:textSize="@dimen/font"
+
+                />
+
+    </LinearLayout>
+
+    <include layout="@layout/loading_trans"/>
+
+
+
+
+
+</RelativeLayout>
