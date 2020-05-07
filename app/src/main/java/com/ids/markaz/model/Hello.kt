@@ -7,4 +7,6 @@ class Hello {
 
 
     var hello2 :Int ?=null
+
+    var Howdy : Int ?=null 
 }
