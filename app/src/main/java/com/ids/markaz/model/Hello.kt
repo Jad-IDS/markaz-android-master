@@ -8,5 +8,5 @@ class Hello {
 
     var hello2 :Int ?=null
 
-    var hello3:Boolean?=null 
+    var hello3:Boolean?=null
 }
