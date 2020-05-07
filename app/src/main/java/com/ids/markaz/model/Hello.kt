@@ -7,4 +7,7 @@ class Hello {
 
 
     var hello2 :Int ?=null
+
+
+    var helloo:Int ?=null 
 }
