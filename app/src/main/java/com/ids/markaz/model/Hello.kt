@@ -11,5 +11,5 @@ class Hello {
     var hello3:Boolean?=null
 
 
-    var hello4:Int?=null 
+    var hello4:Int?=null
 }
