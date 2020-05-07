@@ -10,7 +10,7 @@ class Hello {
 
     var hello3:Boolean?=null
 
-    var helloo:Hello?=null
+    var hellooo:Hello?=null
 
 
     var hello4:Int?=null
